@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-# Create your views here.
-
 def index(request):
-    return HttpResponse("Страница Diagnoses")
+    return render(request, 'diagnoses/index.html')
+
+def about_view(request):
+    return render(request, 'diagnoses/about.html', {'title': 'Это значение передали из view'})

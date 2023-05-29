@@ -3,4 +3,5 @@ from diagnoses.views import *
 
 urlpatterns = [
     path('', index),
+    path('about/', about_view),
 ]
