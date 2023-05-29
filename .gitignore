@@ -1,0 +1,19 @@
+node_modules
+*.lock
+*.pyc
+*.ipynb
+__pycache__
+.local/
+
+# mobile/builds
+db/
+logfile
+env/
+venv/
+.venv
+.vscode
+.autoenv
+.env
+.envrc
+
+*.sqlite3
