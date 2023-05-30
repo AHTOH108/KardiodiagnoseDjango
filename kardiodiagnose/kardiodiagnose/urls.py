@@ -21,5 +21,6 @@ from symptoms.views import index as index_s
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('d/', include('diagnoses.urls')),
-    path('s/', include('symptoms.urls'))
+    path('s/', include('symptoms.urls')),
+    path('accounts/', include('allauth.urls')),
 ]

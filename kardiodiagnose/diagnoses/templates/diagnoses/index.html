@@ -1,19 +1,9 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <meta name="author" content="Kardiodiagnose"/>
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+{% extends 'diagnoses/base.html' %}
 
-  {% block head %}
-    <title>HEAD</title>
-  {% endblock %}
-
-</head>
-
-<body>
-
-    <p> Здесь базовый шаблон index.html</p>
-
-</body>
-</html>
+{% block body %}
+    <h1>Страница index html</h1>
+    <h2></h2>
+    {% for i in list_object %}
+        <li>{{ i }} </li>
+    {% endfor %}
+{% endblock %}
